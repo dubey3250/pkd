@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Receipt</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script type="text/javascript" src="controller.js"></script>
+  <style type="text/css">
+ hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    opacity: 
+} 
+  </style>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="recieptCtrl">
+	<div class="main">
+	<hr>
+		<div class="header">
+			<div style="float:left;">
+
+				<div style="width:80%;">
+					<div style="width:40%;float:left">
+					<img src="logo3.png" >
+					</div>
+					
+				</div>	
+			</div>
+			<div style="float:right;margin-top:10px;">
+				<p>Transaction id: {{transaction_id}}</p>
+			</div>
+		</div>
+	<hr>
+
+		<div class="left">
+			<div class="left_sub" style="border:0px;height:190px;margin-left:10px;">
+				<div class="left_sub_price">
+					<p style="font-size:20px"><b> {{drink}}</b></p>
+					<p>{{descriptions}}</p>
+					<p>Valid on : All Days</p>
+				</div>
+				<div class="right_sub_price">
+					<p style="color:lightblue;font-size:22px;font-weight:bold;">&#8377;{{price}}</p></b>	
+				</div>
+			</div><hr>	
+			<div class="left_sub" style="height:120px;">
+				<b>Vault code :</b>
+			    <p style="padding:10px;font-weight:bold;font-size:50px;text-align:center;">{{unique_code}}</p>
+			</div>
+			<hr/>
+			<div class="left_sub" style="height:140px;">
+				<p><b>Things to remember :</b></p>
+				<ul>
+				<li>All offers are inclusive of taxes & service charges</li>
+				<li>Cannot be clubbed with any other existing offers/promotions</li>
+				</ul>
+			</div>
+			
+
+			<div class="left_sub" style="height:140px;">
+				<p><b>Next steps :</b></p>
+				<ul>
+				<li>Carry your email voucher on phone or access it under the 'vault' section of the BVault app</li>
+				<li>Merchant verifies the unique code from the vault of the app and serves the deals </li>
+				</ul>
+			</div>
+		
+			<div class="left_sub" style="height:50px;">
+				<p><b>Cancellation policy :</b></p>
+				<ul>
+				<li>The deals once purchased , the amount can not be refunded</li>
+				</ul>
+			</div>
+
+		</div>
+		
+	</div>
+	<div id="footer">
+			<p></p><p><b>We're here to help</b> 8888944443 || buisiness@valut.in |</p>
+	</div> 
+</div>	
+</body>
+</html>
